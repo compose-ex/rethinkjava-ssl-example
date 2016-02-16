@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+apply plugin: 'application'
+
+mainClassName = 'rethinkjava.RethinkJava'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.rethinkdb', name: 'rethinkdb-driver', version: '2.2-beta-2'
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.slf4j:slf4j-log4j12:1.7.5'
+}
